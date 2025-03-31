@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Edhar Sinianski 62782</title>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+    }
+    header, footer {
+      width: 100vw;
+      max-width: 100%;
+      background: #0066cc;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+    }
+    header a, footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    main {
+      flex: 1;
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      box-sizing: border-box;
+    }
+    .bio {
+      text-align: center;
+    }
+    .bio img {
+      width: 100%;
+      max-width: 150px;
+      height: auto;
+      object-fit: cover;
+      margin: 0 auto;
+      display: block;
+    }
+    
+    .section-header {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .video-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .video-wrapper video {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+    }
+
+    @media (min-width: 600px) {
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 768px) {
+      main {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 375px) {
+      header, footer {
+        padding: 10px;
+      }
+      main {
+        padding: 10px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <span>Edhar Sinianski — Portfolio</span>
+    <span><a href="mailto:sedhar1@stu.vistula.edu.pl">Contact</a></span>
+  </header>
+  <main>
+    <section class="section bio">
+      <img src="ava.jpg" alt="Avatar">
+      <h2>O mnie</h2>
+      <p>Moje wykształcenie zdobyłem na wiodących uczelniach świata, takich jak Harvard University, MIT oraz Oxford. Dzięki temu mogę łączyć najnowsze teorie z praktycznymi umiejętnościami w tworzeniu nowoczesnych stron internetowych.</p>
+      <div class="info-box">
+        <p>Dodatkowe informacje: Jestem entuzjastą technologii, aktywnie uczestniczę w konferencjach i warsztatach programistycznych. Lubię eksperymentować z nowymi rozwiązaniami i stale rozwijać swoje umiejętności.</p>
+      </div>
+    </section>
+    
+    <section class="section experience">
+      <div class="section-header">
+        <h2>Doświadczenie zawodowe</h2>
+      </div>
+      <p>W trakcie mojej kariery miałem okazję pracować w kilku renomowanych firmach technologicznych. Oto niektóre z moich doświadczeń:</p>
+      <ul>
+        <li>
+          <strong>Software Developer</strong> - Firma Tech Solutions (2019-2021)
+          <ul>
+            <li>Tworzenie responsywnych stron internetowych</li>
+            <li>Współpraca z zespołem projektowym</li>
+            <li>Optymalizacja kodu pod kątem wydajności</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Front-end Developer</strong> - Creative Code Studio (2021-obecnie)
+          <ul>
+            <li>Projektowanie interfejsów użytkownika</li>
+            <li>Implementacja interaktywnych rozwiązań w JavaScript</li>
+            <li>Testowanie i debugowanie aplikacji</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section class="section video">
+      <div class="section-header">
+        <h2>Video</h2>
+      </div>
+      <div class="video-wrapper">
+        <video src="1.mp4" autoplay loop muted controls></video>
+      </div>
+    </section>
+    
+    <section class="section gallery">
+      <div class="section-header">
+        <h2>Galeria zdjęć</h2>
+      </div>
+      <div class="gallery-grid">
+        <img src="1.jpg" alt="Zdjęcie 1">
+        <img src="2.jpg" alt="Zdjęcie 2">
+        <img src="3.jpg" alt="Zdjęcie 3">
+        <img src="4.jpg" alt="Zdjęcie 4">
+      </div>
+    </section>    
+  </main>
+  <footer>
+    <span>Email: <a href="mailto:sedhar1@stu.vistula.edu.pl">sedhar1@stu.vistula.edu.pl</a></span>
+    <span>&copy; 2025 Edhar Sinianski</span>
+  </footer>
+</body>
+</html>
